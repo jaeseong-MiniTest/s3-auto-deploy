@@ -25,9 +25,5 @@ jobs:
         AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
         AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}' 
       run: |
-<<<<<<< HEAD
-        aws s3 cp --recursive --region ap-northeast-2 dist s3://s3-auto-deploy-practice 
-=======
         aws s3 cp --recursive --region ap-northeast-2 dist s3://s3-auto-deploy-practice
->>>>>>> b7cffb2fa1598d71eb40d49475bbf21d29f9e032
-        && aws s3 cp --recursive --region ap-northeast-2 index.html s3://s3-auto-deploy-practice
+        aws s3 cp --recursive --region ap-northeast-2 index.html s3://s3-auto-deploy-practice
